@@ -25,9 +25,9 @@ function nowServing(array) {
 function currentLine(array) {
   if(array.length > 0) {
     let newArray = [];
-    let counter = 1;
+    let counter = 0;
     while(counter <= array.length) {
-      newArray.push(" " + (counter) + ". " + array[counter]);
+      newArray.push(" " + (counter+1) + ". " + array[counter]);
       counter += 1;
     }return ("The line is currently:" + newArray);
   }else {
