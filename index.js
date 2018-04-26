@@ -28,7 +28,7 @@ function currentLine(array) {
     let counter = 1;
     while(counter < array.length) {
       newArray.push(" " + (counter) + ". " + array[counter]);
-      counter -= 1;
+      counter += 1;
     }return ("The line is currently:" + newArray);
   }else {
     return "The line is currently empty.";
